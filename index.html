@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg">
+    <div class="flex">
+        <div class="h1Container">
+            <h1 class="color">hello dude </h1>
+            <!-- <img src="hurt.svg" alt="" class="img"> -->
+        </div>
+    
+        <button class="button-63 someBtn" role="button">Текст</button>
+
+        <div class="hide">
+            <h2 class="color">Определлено да, ты сомневалась?</h2>
+        </div>
+        
+
+
+    </div>
+    <script>
+        const hide = document.querySelector(".hide")
+        const btn = document.querySelector('.someBtn')
+        btn.addEventListener('click', elem)
+        function elem(){
+            
+            setTimeout(()=>{
+                hide.classList.remove("hide")
+            }, 2000)
+        }
+    </script>
+</body>
+</html>
